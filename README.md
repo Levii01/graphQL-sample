@@ -1,25 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My first application with graphQL api. :)
 
-Things you may want to cover:
+# Sample request
+```
+query {  
+  me {
+    id
+    email
+  }
 
-* Ruby version
+  projects {
+    id
+    title
 
-* System dependencies
+    user {
+      id
+      email
+    }
+  }
 
-* Configuration
+    my_projects {
+    id
+    title
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# graphQL-sample
+    user {
+      id
+      email
+    }
+  }
+}
+```
